@@ -20,15 +20,42 @@
         .produtos{
             position: relative;
             width: 100%;
-            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .produtos h1{
             color: #ffffff;
         }
 
         .grid{
             position: relative;
+            width: 100%;
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        .item{
+            position: relative;
+            background-color: #dddddd;
+            color: #000000;
+            border: 1px solid #000000;
+            border-radius: 1em;
+            margin: 1rem;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .imagem-produto{
+            position: relative;
+            width: 80%;
+            height: 80%;
         }
     </style>
 </head>
@@ -37,22 +64,40 @@
         <h1>Nossos Produtos</h1>
         <div class="grid">
             <div class="item">
-                <h2>Nome</h2>
-                <img class="imagem produto" src="img/teste.jpg">
-                <p>Tamanho:</p>
-                <p>Preço: R$</p>
+                <h2>Vestido de noiva Alice</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: P</p>
+                <p>Preço: R$699,99</p>
             </div>
             <div class="item">
-                <h2>Nome</h2>
-                <img class="imagem produto" src="img/teste.jpg">
-                <p>Tamanho:</p>
-                <p>Preço: R$</p>
+                <h2>Buquê com Astromelias</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho:Médio </p>
+                <p>Preço: R$100,00</p>
             </div>
             <div class="item">
-                <h2>Nome</h2>
-                <img class="imagem produto" src="img/teste.jpg">
-                <p>Tamanho:</p>
-                <p>Preço: R$</p>
+                <h2>Buquê de Noiva Jhene Atelie</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: 15 cm</p>
+                <p>Preço: R$179,90</p>
+            </div>
+            <div class="item">
+                <h2>Salto aberto com biqueira cruzada</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: 37</p>
+                <p>Preço: R$ 178,56</p>
+            </div>
+            <div class="item">
+                <h2>Vestido de noiva simples com decote quadrado</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: M</p>
+                <p>Preço: R$949,99</p>
+            </div>
+            <div class="item">
+                <h2>Salto branco com cordão prata</h2>
+                <img class="imagem-produto" src="img/teste.png">
+                <p>Tamanho: 37</p>
+                <p>Preço: R$127,73</p>
             </div>
         </div>
     </div>
